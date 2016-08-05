@@ -76,8 +76,8 @@ li {
 	padding: 5px;
 }
 
-
-.table {
+.border {
+	outline: solid 5px rgba(255, 189, 57, 1.0);
 }
 
 .container {
@@ -89,7 +89,10 @@ li {
 	padding: 5px;
 	width: 200px;
 	float: left;
-	display: inline-table;
+}
+
+.name li {
+	margin: 8px 0;
 }
 
 .race {
@@ -98,8 +101,14 @@ li {
 	float: left;
 }
 
+
 .desc {
 	padding: 5px;
 	width: 500px;
 	float: left;
+}
+
+.race li {
+	margin: 8px 0;
+	clear: both;
 }
