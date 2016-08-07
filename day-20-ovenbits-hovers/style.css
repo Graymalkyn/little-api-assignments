@@ -1,0 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*====================================*/
+p {
+	font-size: 1.4em;
+	margin: 20px;
+	line-height: 1.5em;
+}
+
+.container {
+	color: white;
+	overflow: left;
+	font-family: sans-serif;
+}
+
+.frame1 {
+	background-position: center;
+	width: 30%;
+	height: 400px;
+	margin: 5px;
+	float: left;
+	position: relative;
+	text-align: center;
+ }
+
+
+
+.frame2 {
+	background-position: center;
+	width: 30%;
+	height: 400px;
+	margin: 5px;
+	float: left;
+	position: relative;
+	text-align: center;
+
+}
+
+
+.frame3 {
+	background-position: center;
+	width: 30%;
+	height: 400px;
+	margin: 5px;
+	float: left;
+	position: relative;
+	text-align: center;
+	align-items: center;
+}
+
+
+.tint {
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+
+.tint:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tint:hover .case-study {
+	background-color: rgba(0, 0, 0, 0.3);
+	display: inline-block;
+	z-index: 0;
+}
+
+.main-text {
+	font-size: 3.5em;
+	margin: 100px 0 10px 0;
+}
+
+button {
+	padding: 5px 10px;
+	border: solid 1px white;
+	color: white;
+	font-size: 1.5em;
+	transition: 125ms ease-in, bottom 125ms linear;
+
+}
+
+.case-study {
+	display: none;
+}
+
+.case-study:hover {
+	background-color: white;
+	color: rgba(34, 34, 34, 1.0);
+	z-index: 3;
+}
