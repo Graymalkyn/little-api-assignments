@@ -42,41 +42,57 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-/*table {
+table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}*/
-
-/*====================================*/
+}
+/*===========================*/
 
 body {
-	background-color: rgba(107, 60, 50, 1.0);
-	font-family: sans-serif;
-	color: white;
-	margin: 40px;
-}
-table {
-	background-color: rgba(228, 93, 133, 1.0);
-	border-radius: 5px;
-	border: solid 5px gray;
-
+  background-color: blue;
 }
 
-th, td {
-	background-color: rgba(107, 60, 50, 1.0);
-	border: solid 5px rgba(226, 187, 178, 1.0);
-	border-radius: 5px;
-	padding: 10px;
-	text-align: center;
-	vertical-align: middle;
-
-}
-
-img {
-	width: 200px;
-}
+/*body * {
+  outline: dashed 1px yellow;
+}*/
 
 h1 {
-	font-size: 2em;
-	margin: 20px;
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+ol {
+  list-style: circle;
+}
+
+.container {
+  color: white;
+  margin: 40px;
+  overflow: auto;
+}
+
+.name {
+  float: left;
+  margin: 10px;
+  width: 20%;
+}
+
+.description {
+  float: left;
+  margin: 10px;
+  width: 30%;
+}
+
+.imageUrl {
+  float: left;
+  margin: 10px;
+  width: 40%;
+}
+
+.name, .description, .imageUrl {
+  border: solid 2px white;
+  clear: left;
 }
