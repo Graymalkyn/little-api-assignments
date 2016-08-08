@@ -71,25 +71,28 @@ ol {
 .container {
   color: white;
   margin: 40px;
-  overflow: auto;
 }
 
 .name {
-  float: left;
-  margin: 10px;
+	display: inline-block;
+ 	margin: 10px;
   width: 20%;
 }
 
 .description {
-  float: left;
+	display: inline-block;
   margin: 10px;
   width: 30%;
 }
 
 .imageUrl {
-  float: left;
+	display: inline-block;
   margin: 10px;
-  width: 40%;
+  width: 200px;
+}
+
+#imageUrl {
+	width: 100px;
 }
 
 .name, .description, .imageUrl {

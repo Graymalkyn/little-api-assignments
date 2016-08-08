@@ -4,7 +4,7 @@ var $image = $('#imageUrl');
 
 var promise = $.ajax({
   url: 'http://tiy.ericsowell.com/api/cookingsteaks'
-});
+})
 
 promise.done(function(data){
 
@@ -17,7 +17,8 @@ promise.done(function(data){
   }
 
   for (var i=0; i<data.levels.length; i++){
-    $image.append('<li>' + data.levels[i].imageUrl + '</li>')
+    $image.append('<li>' + '<img src="' + data.levels[i].imageUrl + '"/>' + '</li>')
   }
 
-});
+
+})
