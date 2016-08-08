@@ -56,7 +56,7 @@ p {
 
 .container {
 	color: white;
-	overflow: left;
+	overflow: auto;
 	font-family: sans-serif;
 }
 
@@ -109,18 +109,19 @@ p {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
-.tint:hover .case-study {
-	background-color: rgba(0, 0, 0, 0.3);
+.tint:hover button {
+	/*background: transparent;*/  if I add anything here, then background on line 134 does not work
 	display: inline-block;
 	z-index: 0;
 }
 
 .main-text {
 	font-size: 3.5em;
-	margin: 100px 0 10px 0;
+
 }
 
 button {
+	display: none;
 	padding: 5px 10px;
 	border: solid 1px white;
 	color: white;
@@ -129,12 +130,44 @@ button {
 
 }
 
-.case-study {
-	display: none;
+button:hover {
+	background-color: white;
+	color: black;
+}
+/*not recognized at all*/
+.text-group {
+	display: inline-block;
+	outline: dashed 1px red;
+	vertical-align: middle;
+	position: relative;
+	vertical-align: middle;
+}
+/*not recognized at all*/
+.text-group:hover {
+	outline: dashed 1px yellow;
+	margin: 100px 0 10px 0;
+
 }
 
-.case-study:hover {
-	background-color: white;
-	color: rgba(34, 34, 34, 1.0);
-	z-index: 3;
+/*not recognized at all*/
+@media only screen and (max-width: 768px;){
+	.container {
+		width: 95%;
+		}
+
+		.frame1 {
+			max-width: 100%;
+			float: left;
+		}
+		.frame2 {
+			max-width: 100%;
+			float: left;
+
+		}
+		.frame3 {
+			max-width: 100%;
+			float: left;
+
+		}
+
 }
