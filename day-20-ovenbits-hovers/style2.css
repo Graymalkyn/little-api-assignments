@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*====================================*/
+p {
+	font-size: 1.4em;
+	margin: 20px;
+	line-height: 1.5em;
+
+}
+
+.container {
+	color: white;
+	overflow: auto;
+	font-family: sans-serif;
+}
+
+.frame1 {
+	background-position: center;
+	width: 30%;
+	height: 400px;
+	margin: 5px;
+	float: left;
+	position: relative;
+	text-align: center;
+ }
+
+
+
+.frame2 {
+	background-position: center;
+	width: 30%;
+	height: 400px;
+	margin: 5px;
+	float: left;
+	position: relative;
+	text-align: center;
+
+}
+
+
+.frame3 {
+	background-position: center;
+	width: 30%;
+	height: 400px;
+	margin: 5px;
+	float: left;
+	position: relative;
+	text-align: center;
+}
+
+
+.tint {
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+
+.tint:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tint:hover button {
+	/*background: transparent;  if I add anything here, then background on line 134 does not work*/
+	display: inline-block;
+	z-index: 0;
+}
+
+.main-text {
+	font-size: 3.5em;
+
+}
+
+button {
+	display: none;
+	padding: 5px 10px;
+	border: solid 1px white;
+	color: white;
+	font-size: 1.5em;
+	/*-webkit-transition: height 1s;
+		transition-duration: 1s;*/
+}
+
+button:hover {
+	background-color: white;
+	color: black;
+}
+/*not recognized*/
+.text-group {
+	display: inline-block;
+	outline: dashed 1px red;
+	vertical-align: middle;
+	position: relative;
+	vertical-align: middle;
+}
+/*not recognized*/
+.text-group:hover {
+	outline: dashed 1px yellow;
+	margin: 100px 0 10px 0;
+
+}
+
+/*not recognized*/
+@media only screen and (max-width: 768px;){
+	.container {
+		width: 95%;
+		}
+
+		.frame1 {
+			max-width: 100%;
+			float: left;
+
+		}
+		.frame2 {
+			max-width: 100%;
+			float: left;
+
+		}
+		.frame3 {
+			max-width: 100%;
+			float: left;
+
+		}
+
+}
