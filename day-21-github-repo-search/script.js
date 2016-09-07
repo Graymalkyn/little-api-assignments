@@ -12,16 +12,26 @@ if (this.RepoSearch === undefined) this.RepoSearch = {};
     }
 
     function start() {
-      
+
       var promise = $.ajax({
         url: 'https://api.github.com/search/repositories?q=' + $theInput.val()
       });
 
 
-      promise.done(function(context){
+      promise.done(function(data){
         $theList.empty();
-        for (var i=0; i<context.items.length; i++)
-          $theList.append('<li>' + context.items[i].full_name)
+
+
+        var templateFunc = _.template('<li><%= fullName %></li>');
+
+
+
+
+
+        for (var i=0; i<data.items.length; i++){
+          var html = templateFunc({fullName: data.items[i].full_name});
+          $theList.append(html)
+        }
       })
 
     }
